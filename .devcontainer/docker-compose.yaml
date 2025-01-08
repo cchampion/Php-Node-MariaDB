@@ -54,8 +54,8 @@ volumes:
     name: "${NAME_APP}-sqldata"
   workspaces:
     name: "${NAME_APP}-workspaces"
-    driver: local
-    driver_opts:
-      o: bind
-      type: none
-      device: /home/cchampion/Travail
+#    driver: local
+#    driver_opts:
+#      o: bind
+#      type: none
+#      device: /home/cchampion/Travail
