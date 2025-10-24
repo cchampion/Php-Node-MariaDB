@@ -11,10 +11,10 @@ services:
         - SSH_USER=${SSH_USER}
         - WORKSPACE_APP=${WORKSPACE_APP}
     ports:
-#      - ${PORT_ANGULAR}:4200
+      - ${PORT_ANGULAR}:4200
       - ${PORT_HTTP}:8080
-#      - ${PORT_NODE}:3000
-#      - ${PORT_SSH}:22
+      - ${PORT_NODE}:3000
+      - ${PORT_SSH}:22
       - ${PORT_SYMFONY}:8000
     volumes:
       - workspaces:/workspaces/
@@ -60,3 +60,4 @@ volumes:
 #      type: none
 
 #      device: /home/cchampion/Travail
+
